@@ -1,2 +1,2 @@
-# cyber-panel
+# Cyber-Panel
 Game Server - Control Panel
