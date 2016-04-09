@@ -92,3 +92,10 @@ sudo crontab
 ```
 
 That will run the cron job every minute, if the user has cron option activated we will receive notifications every minute about the servers that he owns.
+
+**IN DEVELOPMENT**
+- Server Update button;
+- Larger game server logs;
+- Fixing some folders names and files paths;
+
+## You can help us by commiting some changes
