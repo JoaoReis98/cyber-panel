@@ -18,6 +18,14 @@ We recommend you too install first [vesta-cp](http://vestacp.com), its very easy
 4. PhpMyAdmin
 
 Create a database and name it as  _cyberpanel_, go to _/home/admin/web/yourdomain.com/public_html/base_dados/_.
+
+Copy the cyber-panel files too your webroot:
+```bash
+/home/admin/web/yourdomain.com/public_html
+```
+Is the default if you have [vesta-cp](http://vestacp.com) installed.
+Then you need too import the database that is on _base_dados/cyberpanel.sql_.
+
 Edit config.php database connection, you can also use email if you want too use crons:
 ```php
 	$db_dbname = "cyberpanel";
@@ -40,6 +48,8 @@ sudo mkdir /home/cyberpanel
 sudo chown cyberpanel:cyberpanel /home/cyberpanel/ * -R 
 ```
 
+
+
 Run this if you gonna use Steam Game-Servers
 ```bash
 sudo su - cyberpanel
@@ -56,6 +66,11 @@ sudo visudo
 admin (ALL)=(ALL) NOPASSWD:ALL
 ```
 The user (admin) is the default user of [vesta-cp](http://vestacp.com) that runs the webserver (apache), if you dont have [vesta-cp](http://vestacp.com) use your webserver _user_ instead.
+
+
+
+
+
 
 **INSTALLING CRON**
 If you want too receive email notifications about your servers just copy the file **/home/admin/web/yourdomain.com/public_html/includes/cron.php** too **/home/admin/web/yourdomain.com/private/**, you need to setup a cron job on [vesta-cp](http://vestacp.com), that is very easy just go on your vesta-cp panel and on the tab (CRONS) add a cron too execute the php file example: **php -q /home/admin/web/yourdomain.com/private/cron.php**, and choose the timing that you want too run the cron.
