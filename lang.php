@@ -1,7 +1,7 @@
 <?php 
 	/**
 	*	Traduzir (Erros e Sucessos)!
-	*/
+	*/ 
 	$linguagens = array();
 	$linguagens = array(
 			"Portugues" => array(
