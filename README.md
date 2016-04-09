@@ -1,13 +1,13 @@
 # Cyber-Panel
 Game Server - Control Panel
 
-** REQUIREMENTS **
+**REQUIREMENTS**
 Tested and working on: Ubuntu Server 14.04 64 bits
 
 Probably works on most __Debian__ based systems, tell us your experience and we will put the Operative System that you used on the list.
 
 
-** HOW TO INSTALL **
+**HOW TO INSTALL**
 
 We recommend you too install first [vesta-cp](http://vestacp.com), its very easy too use and haves some needed dependencies as:
 1. Pure-FDP
