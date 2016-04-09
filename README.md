@@ -75,12 +75,17 @@ The user (admin) is the default user of [vesta-cp](http://vestacp.com) that runs
 **INSTALLING CRON**
 
 If you want too receive email notifications about your servers just copy the file.
+
 **/home/admin/web/yourdomain.com/public_html/includes/cron.php** too **/home/admin/web/yourdomain.com/private/**.
-You need to setup a cron job on [vesta-cp](http://vestacp.com), that is very easy just go on your vesta-cp panel and on the tab (CRONS) add a cron too execute the php file example: 
+
+You need to setup a cron job on [vesta-cp](http://vestacp.com), that is very easy just go on your [vesta-cp](http://vestacp.com) panel and on the tab (CRONS) add a cron too execute the php file example: 
+
 **php -q /home/admin/web/yourdomain.com/private/cron.php**
+
 And choose the timing that you want too run the cron.
 
 You can also add the crontab manually using shell:
+
 ```bash
 sudo crontab
 * * * * * php -q /home/admin/web/yourdomain.com/private/cron.php
