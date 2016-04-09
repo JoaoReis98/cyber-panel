@@ -1,0 +1,12 @@
+# Substituir Variaveis em ficheiros. Neste caso no server.properties para servidores com minecraft.
+sed -i "/^online-mode=/c\online-mode=false" server.properties
+sed -i "/^server-port=/c\server-port={$Porta}" server.properties
+sed -i "/^server-query=/c\server-query={$Porta}" server.properties
+sed -i "/^motd=/c\motd=Servidor Criado com Cyber-Panel" server.properties
+etc.....
+# -s = Criar nova sessao com nome especifico
+# -d = Criar sessao em background
+tmux new-session -s $NomeSessao -d
+
+# Confirmar com bootstrap antes de submeter formulario
+http://stackoverflow.com/questions/23775272/bootstrap-modal-before-form-submit
