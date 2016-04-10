@@ -69,7 +69,11 @@ The user (admin) is the default user of [vesta-cp](http://vestacp.com) that runs
 
 
 
+**DEFAULT LOGIN CREDENCIALS**
 
+email: _admin@admin.com_
+
+password: _admin_
 
 
 **INSTALLING CRON**
@@ -98,6 +102,7 @@ That will run the cron job every minute, if the user has cron option activated w
 - Larger game server logs;
 - Fixing some folders names and files paths;
 
+<<<<<<< HEAD
 **NOTES**
 - Dont forget too add firewall rules too your game-servers.
 
@@ -108,3 +113,6 @@ sudo iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
 ```
 
 ## You can help us by commiting some changes.
+=======
+## You can help us by commiting some changes
+>>>>>>> 5f92c189d44f27d59bb0a6697c54e6e6d5054600
