@@ -98,4 +98,13 @@ That will run the cron job every minute, if the user has cron option activated w
 - Larger game server logs;
 - Fixing some folders names and files paths;
 
-## You can help us by commiting some changes
+**NOTES**
+- Dont forget too add firewall rules too your game-servers.
+
+For steam game-servers use this
+```bash
+sudo iptables -A INPUT -p udp -m udp --sport 27000:27030 --dport 1025:65355 -j ACCEPT
+sudo iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
+```
+
+## You can help us by commiting some changes.
