@@ -102,7 +102,6 @@ That will run the cron job every minute, if the user has cron option activated w
 - Larger game server logs;
 - Fixing some folders names and files paths;
 
-<<<<<<< HEAD
 **NOTES**
 - Dont forget too add firewall rules too your game-servers.
 
