@@ -113,6 +113,3 @@ sudo iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
 ```
 
 ## You can help us by commiting some changes.
-=======
-## You can help us by commiting some changes
->>>>>>> 5f92c189d44f27d59bb0a6697c54e6e6d5054600
