@@ -69,7 +69,9 @@ The user (admin) is the default user of [vesta-cp](http://vestacp.com) that runs
 
 
 
-
+**DEFAULT USER AND PASSWORD**
+email: admin@admin.com
+password: admin
 
 
 **INSTALLING CRON**
