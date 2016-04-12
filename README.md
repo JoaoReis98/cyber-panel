@@ -1,6 +1,8 @@
 # Cyber-Panel
 Game Server - Control Panel
 
+[![Passing](https://img.shields.io/badge/build-passing-green.svg)]()
+
 **REQUIREMENTS**:
 
 Tested and working on: Ubuntu Server 14.04 64 bits
