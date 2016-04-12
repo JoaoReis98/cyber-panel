@@ -1,6 +1,6 @@
 <?php
-	include_once("includes/querys/SourceQuery.class.php");
-	include_once("../includes/querys/SourceQuery.class.php");
+	@include_once("includes/querys/SourceQuery.class.php");
+	@include_once("../includes/querys/SourceQuery.class.php");
 	/**
 	*    This file is part of Cyber-Panel.
 	*
@@ -158,6 +158,8 @@
 		function _atualizarServidor($Id)
 		{
 			echo "Updating";
+			shell_exec("sudo tmux new-session -s $Id -d");
+			shell_exec("sudo tmux send -t $Id 'chown $Id:cyberpanel /home/cyberpanel/$Id/* -R; chmod 770 /home/cyberpanel/$Id/* -R; sudo su - cyberpanel -c \"bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/ +app_update 90 +quit\"; exit' ENTER");
 		}
 	}
 	#print_r(_iniciaModulo("89.44.246.34", 27015));

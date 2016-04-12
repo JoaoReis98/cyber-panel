@@ -904,12 +904,12 @@
 			sudo chown ".$this->Id.":cyberpanel /home/cyberpanel/".$this->Id."/;
 			sudo chown ".$this->Id.":cyberpanel /home/cyberpanel/".$this->Id."/* -R;
 			sudo chmod 770 /home/cyberpanel/".$this->Id."/* -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.sh -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.java -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.sh -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.bat -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.jar -R;
-			sudo chmod 550 /home/cyberpanel/".$this->Id."/*.so -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.sh -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.java -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.sh -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.bat -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.jar -R;
+			sudo chmod 570 /home/cyberpanel/".$this->Id."/*.so -R;
 			exit; exit; exit";
 			 #die($corre);
 			// Devido a um bug é necessário forçar a saida do TMUX usando 3 vezes o comando EXIT.

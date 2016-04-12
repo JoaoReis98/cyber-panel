@@ -19,7 +19,7 @@
 	*/
 
 	/**
-	*	@modulo Counter-Strike 1.6
+	*	@modulo Counter-Strike Global Offensive
 	*	@author João Reis
 	*	@Year 2016
 	*	@license GPL ( http://www.gnu.org/licenses/gpl-3.0.en.html )
@@ -165,10 +165,16 @@
 		{
 			
 			echo "Updating";
+			
 			#_pararServidor($Id);
 			shell_exec("sudo tmux new-session -s $Id -d");
-			$Comando = "cd /home/cybepanel; sudo ./steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 validate;";
-			shell_exec("sudo tmux send -t ".$Id." '$Comando' ENTER");
+			#$Comando = "sudo su cyberpanel -c 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 validate +quit'; exit;";
+			shell_exec("sudo tmux send -t $Id 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 +quit; exit;' ENTER");
+			#sleep(1);
+			echo $Comando;
+			#die();
+			#shell_exec("sudo tmux send -t $Id 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 validate +quit; exit;' ENTER");
+			die();
 		}
 	}
 	#print_r(_iniciaModulo("37.228.132.250", 27115));
