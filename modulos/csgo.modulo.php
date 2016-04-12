@@ -165,16 +165,10 @@
 		{
 			
 			echo "Updating";
-			
-			#_pararServidor($Id);
+			_pararServidor($Id);
 			shell_exec("sudo tmux new-session -s $Id -d");
-			#$Comando = "sudo su cyberpanel -c 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 validate +quit'; exit;";
-			shell_exec("sudo tmux send -t $Id 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 +quit; exit;' ENTER");
-			#sleep(1);
-			echo $Comando;
-			#die();
-			#shell_exec("sudo tmux send -t $Id 'bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/csgo/ +app_update 740 validate +quit; exit;' ENTER");
-			die();
+			shell_exec("sudo tmux send -t $Id 'chown $Id:cyberpanel /home/cyberpanel/$Id/* -R; chmod 770 /home/cyberpanel/$Id/* -R; sudo su - cyberpanel -c \"bash /home/cyberpanel/steamcmd.sh +login anonymous +force_install_dir /home/cyberpanel/$Id/ +app_update 740 +quit\"; exit' ENTER");
+			
 		}
 	}
 	#print_r(_iniciaModulo("37.228.132.250", 27115));
