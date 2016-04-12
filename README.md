@@ -2,6 +2,7 @@
 Game Server - Control Panel
 
 [![Passing](https://img.shields.io/badge/build-passing-green.svg)]()
+[![Installation](https://img.shields.io/badge/installation-manual-red.svg)]()
 
 **REQUIREMENTS**:
 
